@@ -1,0 +1,137 @@
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #edf4f5;
+  padding: 10px 20px;
+  position: relative;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.logo h1 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #000;
+  margin: 0;
+}
+
+.nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav li {
+  margin: 0 40px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #000;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.nav a:hover {
+  color: #007bff;
+}
+
+.button-container {
+  display: flex;
+  align-items: center;
+}
+
+.order-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.order-button:hover {
+  background-color: #0056b3;
+}
+
+.arrow {
+  font-weight: bold;
+}
+
+.shop-cart-button {
+  float: right;
+  cursor: pointer;
+  transition: color, transform 500ms ease;
+}
+
+.shop-cart-button:hover,
+.shop-cart-button.active {
+  color: #cd3d3d;
+  transform: scale(1.5);
+}
+
+.shop-cart {
+  position: absolute;
+  top: 50px;
+  right: 0;
+  width: 450px;
+  background: #fafafa;
+  -webkit-box-shadow: 4px 5px 15px -7px #606060;
+  box-shadow: 4px 5px 15px -7px #606060;
+  z-index: 1000;
+  border-radius: 10px;
+
+  padding: 10px;
+  padding-bottom: 0;
+}
+
+.shop-cart .item {
+  width: 100%;
+  float: left;
+  margin-bottom: 10px;
+}
+
+.shop-cart .item img {
+  width: 70px;
+  float: left;
+  margin-right: 20px;
+}
+
+.shop-cart .item h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+/* Стиль для пустой корзины */
+.shop-cart p {
+  text-align: center;
+  color: #666;
+  font-size: 14px;
+  margin: 20px 0;
+}
+
+.shop-cart .item .delete-icon {
+  color: #ca5252;
+  float: right;
+  position: relative;
+  cursor: pointer;
+  transition: color, transform 500ms ease;
+}
+
+.shop-cart .item .delete-icon:hover {
+  color: #d83030;
+  transform: scale(1.5);
+}

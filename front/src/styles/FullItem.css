@@ -1,0 +1,107 @@
+.full-item-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.full-item {
+  background: #fff;
+  width: 80%;
+  max-width: 600px;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  position: relative;
+  text-align: center;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.full-item img {
+  width: 60%;
+  height: 350px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.full-item h3 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+.full-item p {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.full-item b {
+  font-size: 20px;
+  font-weight: bold;
+  color: #007bff;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.full-item .add-to-cart {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.full-item .add-to-cart:hover {
+  background-color: #0056b3;
+  transform: scale(1.1);
+}
+
+.full-item .close-button {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 30px;
+  height: 30px;
+  background: #ff4d4d;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.full-item .close-button:hover {
+  background: #cc0000;
+}
